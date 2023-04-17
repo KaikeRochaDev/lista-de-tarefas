@@ -5,13 +5,15 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     background-color: #eee;
 }
 
 h1{
     text-align: center;
     font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 header{
@@ -27,6 +29,8 @@ input{
     font-size: 2rem;
     width: 80%;
     padding-left: 10%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 button.add{
@@ -39,4 +43,73 @@ button.add{
     height: 120px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    font-size: 1.6rem;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    padding-top: 40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+.item-icone{
+    flex: 20%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item-nome{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-botao{
+    flex: 25%;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    font-size: 1.6rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.item.clicado{
+    background-color: #d4f6d9;
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.fa-circle-check{
+    color: green;
+    cursor: pointer;
+}
+
+.fa-circle{
+    cursor: pointer;
 }
