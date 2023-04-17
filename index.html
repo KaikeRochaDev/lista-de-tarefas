@@ -16,39 +16,11 @@
 
     <header>
         <input id="inputTarefa" type="text" placeholder="Digite sua tarefa">
-        <button id="btn-add" class="add"><i class="fa-solid fa-plus" style="color: #fff;"></i> Adicionar</button>
+        <button onclick="addTarefa()" id="btn-add" class="add"><i class="fa-solid fa-plus" style="color: #fff;"></i> Adicionar</button>
     </header>
 
     <main id="areaLista">
-        <div class="item">
-            <div class="item-icone">
-                <i class="fa-regular fa-circle" style="color: #000000; width: 100%;"></i>
-            </div>
-
-            <div class="item-nome">
-                Teste de tarefa
-            </div>
-
-            <div class="item-botao">
-                    <button class="delete"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Deletar</button>
-            </div>
-
-        </div>
-
-        <div class="item clicado">
-            <div class="item-icone">
-                <i class="fa-solid fa-circle-check" style="width: 100%;"></i></i>
-            </div>
-
-            <div class="item-nome">
-                Teste de tarefa
-            </div>
-
-            <div class="item-botao">
-                    <button class="delete"><i class="fa-solid fa-trash" style="color: #ffffff;"></i> Deletar</button>
-            </div>
-
-        </div>
+        
     </main>
 
     <script src="js/controle.js"></script>
